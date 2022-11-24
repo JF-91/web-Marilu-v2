@@ -1,5 +1,5 @@
 
-import { Grid, Paper, Box, Stack } from '@mui/material'
+import { Grid, Paper, Box, Stack, Container, CardMedia } from '@mui/material'
 
 
 import React, { FC } from 'react'
@@ -7,24 +7,32 @@ import FormApp from '../../components/forms'
 
 import foto from './image/burbujas.jpg'
 
+// sx={{ marginLeft: '6em', marginTop: '6em', marginRight: '6em', marginBottom: '6em' }}
 const ContactPage: FC<{}> = () => {
   return (
-    <Box sx={{ marginLeft:'6em', marginTop:'6em', marginRight:'6em', marginBottom:'6em'  }}>
+    <Container >
 
-      <Grid container spacing={2} sx={{ mt: '7em', }}>
+      <Grid container spacing={2} sx={{ mt: '12em', }} 
+        direction='column'
+        alignContent="center"
+        alignItems="center"
+        justifyContent="center"
+        style={{ minHeight: '100vh' }}>
 
-        <Grid item xs={12} md={8} xl={6}>
-          <img src={foto} style={{ borderRadius: "0.5em", maxHeight: "100vh", objectFit: "cover" }} />
+        <Grid item xs={12} md={9} xl={6}>
+          <Paper elevation={3} sx={{padding:"1.2em", borderRadius:"2.5em"}}>
+            <CardMedia component='img' src={foto} style={{ height:'600',borderRadius: "0.5em", maxHeight: "75vh=", maxWidth:"100vh",objectFit: "cover", }} />
+          </Paper>
         </Grid>
 
-        <Grid item xs={12} md={4} xl={6}>
-          <Box sx={{display:'flex', justifyContent:'center'}}>
+        <Grid item xs={12} md={4} xl={6} >
+          <Box sx={{ alignContent:'center' ,alignItems:'center', justifyContent: 'center' }}>
             <FormApp />
           </Box>
         </Grid>
 
       </Grid>
-    </Box>
+    </Container>
   )
 }
 

@@ -1,11 +1,13 @@
+import { Container } from '@mui/material'
 import React, { FC } from 'react'
+import MainAboutPage from './mainAbout/main'
 
 
 const AboutPage:FC<{}> = () => {
   return (
-    <div>
-      <h1>aboud</h1>
-    </div>
+    <Container>
+      <MainAboutPage />
+    </Container>
   )
 }
 

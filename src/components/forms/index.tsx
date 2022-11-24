@@ -23,11 +23,11 @@ const FormApp:FC<{}> = () =>{
     return(
         <Container>
             <Grid container
-                sx={{minHeight:"100vh"}}>
+                sx={{minHeight:"100vh",mt:'4em'}}>
                     <Grid item>
                         <Paper sx={{padding:"1.2em", borderRadius:" 2.5em"}}>
                             <Typography sx={{mt:1, mb:1}} variant="h4">
-                                Form
+                                Nachricht
                             </Typography>
                             <Box component='form' onSubmit={formik.handleSubmit}>
                                 <TextField 
@@ -35,7 +35,7 @@ const FormApp:FC<{}> = () =>{
                                     margin='normal'
                                     type='text'
                                     fullWidth
-                                    label='name'
+                                    label='Vorname'
                                     sx={{mt:2, mb:1}}
                                     required
                                     />
@@ -44,13 +44,13 @@ const FormApp:FC<{}> = () =>{
                                     margin='normal'
                                     type='email'
                                     fullWidth
-                                    label='name'
+                                    label='email'
                                     sx={{mt:2, mb:1}}
                                     required
                                     />
                                     <TextareaAutosize 
                                     name='message'
-                                    aria-label='...'
+                                    aria-label='Nachricht ...'
                                     minRows={5}
                                     style={{width:'100%'}}
                                     

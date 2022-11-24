@@ -1,0 +1,33 @@
+[
+    {
+        "id":"1homeSlider",
+        "name":"logo",
+        "url":"/imgs/slider1.jpeg",
+        "description":"",
+        "title":""
+    },
+    {
+        "id":"2homeSlider",
+        "name":"kleidung",
+        "url":"/imgs/slider2.jpeg",
+        "description":"",
+        "title":""
+        
+    },
+    {
+        "id":"3homeSlider",
+        "name":"hemde",
+        "url":"/imgs/slider3.jpeg",
+        "description":"",
+        "title":""
+    },
+    {
+        "id":"4homeSlider",
+        "name":"hemdeWeissen",
+        "url":"/imgs/slider4.jpeg",
+        "description":"",
+        "title":""
+    }
+    
+
+]

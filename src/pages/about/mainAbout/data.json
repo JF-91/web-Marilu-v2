@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1about",
+        "name":"abejas",
+        "url":"/imgs/abejas.jpg"
+    },
+    {
+        "id": "2about",
+        "name":"marilu",
+        "url":"/imgs/marilu.jpeg"
+    },
+    {
+        "id": "3about",
+        "name":"michaska",
+        "url":"/imgs/michaska.jpeg"
+    }
+]
