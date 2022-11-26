@@ -1,5 +1,4 @@
 import { CardMedia, Container, Grid, Paper, Typography } from '@mui/material'
-import { Box } from '@mui/system';
 import React, { FC } from 'react'
 
 //slider
@@ -17,8 +16,9 @@ const MainAboutPage: FC<{}> = () => {
             <Fade>
                 {
                     fotos.map((item) => (
-                        <div>
+                        <div key={item.id}>
                             <CardMedia
+                                
                                 component='img'
                                 height="600"
                                 image={item.url}

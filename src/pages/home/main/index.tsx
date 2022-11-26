@@ -15,7 +15,7 @@ const MainPage = () => {
                     style={{ minHeight: '100vh' }}>
                     {
                         promoData.map((item) => (
-                            <Grid item key={item.id} xs={12} md={6} lg={4} spacing={2} mb={{ xs: 2, md: 4, lg: 4 }} mr={{ xs: 2, md: 2, lg: 4 }}>
+                            <Grid item key={item.id} xs={12} md={6} lg={4}  mb={{ xs: 2, md: 4, lg: 4 }} mr={{ xs: 2, md: 2, lg: 4 }}>
 
                                 <Paper>
                                     <CardsHomePage id={item.id} name={item.name} url={item.url} description={item.description} title={item.title} />
