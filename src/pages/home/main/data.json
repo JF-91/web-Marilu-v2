@@ -3,35 +3,35 @@
         "id":"1main",
         "name":"pic1",
         "url": "/imgs/one.jpeg",
-        "title": "titulo",
-        "description":"descripcion"
+        "title": "Servicequalität",
+        "description":"wir bieten den besten Service, unsere Kunden sind mit unserer Arbeit zufrieden. Seit mehr als einem Jahrzehnt in Ihrem Dienst"
     },
     {
         "id":"2main",
         "name":"pci2",
         "url": "/imgs/two.jpeg",
-        "title": "titulo",
-        "description":"descripcion"
+        "title": "Wir kümmern uns um Ihre Kleidung",
+        "description":"Wir bügeln und waschen Ihre Kleidung mit größter Sorgfalt."
     },
     {
         "id":"3main",
         "name":"pc3",
         "url": "/imgs/three.jpeg",
-        "title": "titulo",
-        "description":"descripcion"
+        "title": "Bekleidungsnähen",
+        "description":"wir bieten einen Reparaturservice für Ihre Kleidung an. Wir sind Profis mit jahrelanger Erfahrung."
     },
     {
         "id":"4main",
         "name":"pic4",
         "url": "/imgs/four.jpeg",
-        "title": "titulo",
-        "description":"descripcion"
+        "title": "Hemden bügeln",
+        "description":"wir haben ausgezeichnete Fachleute mit jahrelanger Erfahrung. Unser Bügelservice ist von höchster Qualität."
     },
     {
         "id":"5main",
         "name":"pic5",
         "url": "/imgs/five.jpeg",
-        "title": "titulo",
-        "description":"descripcion"
+        "title": "wir liefern Ihre Kleidung zu Ihnen nach Hause",
+        "description":"wir sammeln und liefern Ihre Kleidung. Wir sind pünktlich da, wo Sie uns hinschicken."
     }
 ]
