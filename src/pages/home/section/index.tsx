@@ -13,7 +13,7 @@ const SectionHomePAge: FC<{}> = () => {
                 alignItems='center'
                 justifyContent='center'
                 sx={{ minHeight: '100vh' }}>
-                <Grid item sx={{ sm: 12, md: 6, xl: 6 }}>
+                <Grid item sx={{sm:12, md:12, xl:6}}>
                     <Paper elevation={3} sx={{ padding: '1.2em', borderRadius: '2.5em' }}>
                         <CardMedia
                             component='img'

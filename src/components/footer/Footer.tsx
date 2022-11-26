@@ -18,7 +18,7 @@ const Footer: FC<{}> = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Textil Räningun & Wäscherei</Box>
+                            <Box borderBottom={1}>Textilreiningung & Wäscherei</Box>
                             <Logo />
 
                         </Grid>
