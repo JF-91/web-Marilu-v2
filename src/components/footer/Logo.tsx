@@ -6,6 +6,7 @@ const LogoFooter: React.FC = (props) => (
     width={220}
     height={220}
     viewBox="0 0 1065 592"
+    color="#ffffff"
     {...props}
   >
     <path d="M.7.7C.3 1 0 134.2 0 296.7V592h1065V297.6c0-161.9-.3-295.1-.6-296C1063.8.1 1016 0 532.6 0 240.4 0 1 .3.7.7zM1062 296v293H3V3h1059v293z" />

@@ -6,8 +6,10 @@ import React, { FC } from 'react'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 
+
 //logo
 import Logo from './Logo'
+import Impresum from './Impresum';
 const Footer: FC<{}> = () => {
 
     
@@ -18,9 +20,8 @@ const Footer: FC<{}> = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Textilreiningung & Wäscherei</Box>
-                            <Logo />
-
+                            <Box borderBottom={1}>Impressum</Box>
+                            <Impresum />
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             <Box borderBottom={1}>Unternehmen</Box>
@@ -34,24 +35,20 @@ const Footer: FC<{}> = () => {
                                     Über uns
                                 </Link>
                             </Box>
-                            <Box>
-                                <Link href='/' color="inherit">
-                                    Privace Police
-                                </Link>
-                            </Box>
+                           
 
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Helfen</Box>
+                            <Box borderBottom={1}>Hilfe</Box>
                             <Box>
                                 <Link href='/contact' color="inherit">
                                     Kontact
                                 </Link>
                             </Box>
                             <Box>
-                                <IconButton href="tel:+  01 4704203">
+                                <IconButton href="tel: +43 1 4704203">
                                     <LocalPhoneIcon />
-                                    +  01 4704203
+                                       01 / 4704203
                                 </IconButton>
                             </Box>
                             <Box>

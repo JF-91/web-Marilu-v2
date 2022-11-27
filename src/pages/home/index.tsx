@@ -9,13 +9,14 @@ import { Fade } from 'react-slideshow-image';
 import SliderHome from '../../components/slider/SliderHome'
 import MainPage from './main';
 import SectionHomePAge from './section';
+import PriceAndInfo from './sectionMain';
 
 const HomePage = () => {
   return (
     <Box marginTop='12em'>
      <SliderHome />
      <br />
-     <SectionHomePAge />
+     <PriceAndInfo />
      <MainPage />
     </Box>
   )

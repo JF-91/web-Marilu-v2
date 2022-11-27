@@ -1,4 +1,5 @@
-import { CardMedia, Container, Grid, Paper, Typography } from '@mui/material'
+import { Button, CardMedia, Container, Grid, Paper, Typography } from '@mui/material'
+import { Stack } from '@mui/system';
 import React, { FC } from 'react'
 
 //slider
@@ -36,11 +37,18 @@ const MainAboutPage: FC<{}> = () => {
                     <Typography borderBottom={2} variant='h2' color='primary'>
                         Kleiderreinigung & Wäscherei
                     </Typography>
-                    <Typography variant='body1' sx={{ mt: '5em' }}>
-                        Seit mehr als einem Jahrzehnt bieten wir den besten Service für Ihre Kleidung und Teppiche, unsere Kunden sind unsere Priorität, und wir sind in ständiger Kommunikation mit Ihnen, um Ihre Zweifel zu lösen.
-                        <br />
-                        Unsere jahrelange Erfahrung in diesem Bereich und das gute Feedback unserer Kunden geben uns die Gewissheit, dass wir unsere Arbeit hervorragend machen.
-                    </Typography>
+
+                    <Stack direction='column' spacing={3}>
+                        <Button variant='outlined' color='secondary' sx={{mt:3}}>Waschen</Button>
+                        <Button variant='outlined' color='secondary'>Wäsche schrankfertig</Button>
+                        <Button variant='outlined' color='secondary'>Putzen</Button>
+                        <Button variant='outlined' color='secondary'>Hochzeits- u. Ballkleider</Button>
+                        <Button variant='outlined' color='secondary'>Hemdendienst</Button>
+                        <Button variant='outlined' color='secondary'>Abholung / Zustellung</Button>
+                        <Button variant='outlined' color='secondary'>Teppichreinigung</Button>
+                        <Button variant='outlined' color='secondary'>Lederreinigung</Button>
+                        <Button variant='outlined' color='secondary'>Pelze u. Felle</Button>
+                    </Stack>
 
                 </Grid>
             </Grid>
