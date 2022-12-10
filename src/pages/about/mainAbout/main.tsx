@@ -1,15 +1,23 @@
-import { Button, CardMedia, Container, Grid, Paper, Typography } from '@mui/material'
+import { Box, Button, CardMedia, Container, Grid, Link ,Paper, Typography } from '@mui/material'
 import { Stack } from '@mui/system';
 import React, { FC } from 'react'
+
+
 
 //slider
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import AboutPage from '..';
+import ParallaxService from '../../../components/parallax/unsereService/ParallaxService';
 
 //data imgs for about from public
 import fotos from './data.json'
 
 const MainAboutPage: FC<{}> = () => {
+
+    
+
+
     return (
         <Container sx={{ mt: '15em' }}>
 
@@ -19,7 +27,7 @@ const MainAboutPage: FC<{}> = () => {
                     fotos.map((item) => (
                         <div key={item.id}>
                             <CardMedia
-                                
+
                                 component='img'
                                 height="600"
                                 image={item.url}
@@ -32,24 +40,24 @@ const MainAboutPage: FC<{}> = () => {
                 }
             </Fade>
 
-            <Grid container sx={{ mt: '5em' }}>
-                <Grid item>
+            <Grid container sx={{ mt: '5em', placeContent:'center' }} >
+
+                <Grid item >
                     <Typography borderBottom={2} variant='h2' color='primary'>
                         Kleiderreinigung & Wäscherei
                     </Typography>
 
                     <Stack direction='column' spacing={3}>
-                        <Button variant='outlined' color='secondary' sx={{mt:3}}>Waschen</Button>
-                        <Button variant='outlined' color='secondary'>Wäsche schrankfertig</Button>
-                        <Button variant='outlined' color='secondary'>Putzen</Button>
-                        <Button variant='outlined' color='secondary'>Hochzeits- u. Ballkleider</Button>
-                        <Button variant='outlined' color='secondary'>Hemdendienst</Button>
-                        <Button variant='outlined' color='secondary'>Abholung / Zustellung</Button>
-                        <Button variant='outlined' color='secondary'>Teppichreinigung</Button>
-                        <Button variant='outlined' color='secondary'>Lederreinigung</Button>
-                        <Button variant='outlined' color='secondary'>Pelze u. Felle</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#waschen' sx={{ mt: 3 }}>Waschen</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#schrankfertig'>Wäsche schrankfertig</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#putzen'>Putzen</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#hochzeit'>Hochzeits- u. Ballkleider</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#hemde'>Hemdendienst</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#abholung'>Abholung / Zustellung</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#teppich'>Teppichreinigung</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#leder'>Lederreinigung</Button>
+                        <Button variant='outlined' color='secondary' LinkComponent={Link} href='/about#pelze'>Pelze u. Felle</Button>
                     </Stack>
-
                 </Grid>
             </Grid>
         </Container>

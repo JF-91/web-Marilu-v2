@@ -20,18 +20,18 @@ const Footer: FC<{}> = () => {
                 <Container maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Impressum</Box>
+                            <Box borderBottom={1} sx={{color:'#424242'}}>Impressum</Box>
                             <Impresum />
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Unternehmen</Box>
+                            <Box borderBottom={1} sx={{color:'#424242'}}>Unternehmen</Box>
                             <Box>
-                                <Link href='/contact' color="inherit">
+                                <Link href='/contact' color="inherit" sx={{color:'#424242'}}>
                                     Kontact
                                 </Link>
                             </Box>
                             <Box>
-                                <Link href='/about' color="inherit">
+                                <Link href='/about' color="inherit" sx={{color:'#424242'}}>
                                     Über uns
                                 </Link>
                             </Box>
@@ -39,9 +39,9 @@ const Footer: FC<{}> = () => {
 
                         </Grid>
                         <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>Hilfe</Box>
+                            <Box borderBottom={1} sx={{color:'#424242'}}>Hilfe</Box>
                             <Box>
-                                <Link href='/contact' color="inherit">
+                                <Link href='/contact' color="inherit" sx={{color:'#424242'}}>
                                     Kontact
                                 </Link>
                             </Box>

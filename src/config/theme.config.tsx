@@ -47,7 +47,13 @@ const ThemeConfig:FC<PropType> = ({children})=>{
                   borderRadius: "0.5em",
                 },
               },
+              styleOverrides:{
+                outlined :{
+                    '&:hover':{ background: "rgb(7,134,272,0.42)"}
+                }
+              }
             },
+
           }
        
     })
