@@ -26,16 +26,7 @@ const NewNavBarApp:FC<{}> = () => {
                 <Toolbar>
                     <Hidden only={['md', 'lg', 'xl']}>
                         <Grid container sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-                            <Grid item>
-                            <IconButton
-                            edge='start'
-                            size='large'
-                            aria-label='open drawer'
-                            color='inherit'
-                            onClick={toggleDrawer(true)}>
-                            <MenuIcon />
-                        </IconButton>
-                            </Grid>
+                            
                             <Grid item sx={{  }}>
                                 <Stack direction='column' spacing={2}>
                                     <Box>
@@ -46,11 +37,22 @@ const NewNavBarApp:FC<{}> = () => {
                                     </Box>
                                 </Stack>
                             </Grid>
+
+                            <Grid item>
+                                <IconButton
+                                edge='start'
+                                    size='large'
+                                    aria-label='open drawer'
+                                    color='inherit'
+                                    onClick={toggleDrawer(true)}>
+                                <MenuIcon />
+                                </IconButton>
+                            </Grid>
                         </Grid>
                        
                        
                         <Drawer
-                            anchor='left'
+                            anchor='right'
                             open={open}
                             onClose={toggleDrawer(false)}
                             variant='temporary'
