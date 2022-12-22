@@ -35,6 +35,9 @@ const ThemeConfig:FC<PropType> = ({children})=>{
             ].join(),
             body1:{
                 fontFamily:"Condensed"
+            },
+            body2:{
+                fontFamily:'Catamaran'
             }
             
         },
@@ -53,6 +56,7 @@ const ThemeConfig:FC<PropType> = ({children})=>{
                 }
               }
             },
+            
 
           }
        

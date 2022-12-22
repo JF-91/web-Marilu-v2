@@ -8,7 +8,7 @@ import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 import Logo from './Logo';
 import logoSimple from '../../public/LogoSimple.jpeg'
 
-const NewNavBarApp:FC<{}> = () => {
+const NewNavBarApp: FC<{}> = () => {
 
     const [open, setOpen] = useState(false)
 
@@ -25,32 +25,42 @@ const NewNavBarApp:FC<{}> = () => {
             <AppBar>
                 <Toolbar>
                     <Hidden only={['md', 'lg', 'xl']}>
-                        <Grid container sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-                            
-                            <Grid item sx={{  }}>
-                                <Stack direction='column' spacing={2}>
+                        <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+
+                            <Grid item sx={{}}>
+                                <Stack direction='column' spacing={2} alignItems='start'>
                                     <Box>
-                                        <Typography variant="body1">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen</Typography>
+                                        <Typography variant="h6">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen</Typography>
                                     </Box>
                                     <Box>
-                                        <Typography variant="body2">Urlaub: 24.12.2022 – 8.1.2023</Typography>
+                                        <Typography variant="body1">Urlaub: 24.12.2022 – 8.1.2023</Typography>
                                     </Box>
+                                    <IconButton href="tel: +43 1 4704203" size='small' edge='end'>
+                                        <LocalPhoneIcon />
+                                        01 / 4704203
+                                    </IconButton>
+
+                                    <IconButton href='mailto:textilreinigung.1180@inode.at' size='small' edge='end' >
+                                        <ForwardToInboxIcon />
+                                        email
+                                    </IconButton>
+
                                 </Stack>
                             </Grid>
 
                             <Grid item>
                                 <IconButton
-                                edge='start'
+                                    edge='start'
                                     size='large'
                                     aria-label='open drawer'
                                     color='inherit'
                                     onClick={toggleDrawer(true)}>
-                                <MenuIcon />
+                                    <MenuIcon />
                                 </IconButton>
                             </Grid>
                         </Grid>
-                       
-                       
+
+
                         <Drawer
                             anchor='right'
                             open={open}
@@ -92,7 +102,7 @@ const NewNavBarApp:FC<{}> = () => {
                                 <IconButton LinkComponent={Link} href='/'>
                                     <Box
                                         component='img'
-                                        sx={{height: 64,}}
+                                        sx={{ height: 64, }}
                                         alt='logo'
                                         src='/logoSimple.jpeg'>
 
@@ -103,10 +113,10 @@ const NewNavBarApp:FC<{}> = () => {
                             <Grid item sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Stack direction='column' spacing={2}>
                                     <Box>
-                                        <Typography variant="body1">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen</Typography>
+                                        <Typography variant="h6">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen</Typography>
                                     </Box>
                                     <Box>
-                                        <Typography variant="body2">Urlaub: 24.12.2022 – 8.1.2023</Typography>
+                                        <Typography variant="body1">Urlaub: 24.12.2022 – 8.1.2023</Typography>
                                     </Box>
                                 </Stack>
                             </Grid>

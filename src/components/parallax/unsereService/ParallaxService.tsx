@@ -22,18 +22,19 @@ const ParallaxService: FC<{}> = () => {
         bgImage={waschen}
         bgImageAlt="waschen"
         strength={-200}
-        
+
       >
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify' >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Wir haben jahrzehntelange Erfahrung in der Reinigung und Trocknung aller Arten von Kleidungsstücken.
+          Wir arbeiten mit der besten professionellen Sorgfalt, wir garantieren eine ausgezeichnete Arbeit.
         </Typography>
       </Box>
 
-      <div  id='schrankfertig'></div>
+      <div id='schrankfertig'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={schrankfertig}
@@ -43,13 +44,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Wir arbeiten mit großer Sorgfalt und Professionalität, wir liefern Ihre Kleidung mit besonderer Sorgfalt, damit der Transport und die Lagerung für Sie so zufriedenstellend wie möglich ist.
         </Typography>
       </Box>
 
-      <div  id='putzen'></div>
+      <div id='putzen'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={putzen}
@@ -59,13 +60,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Wir arbeiten mit großer Professionalität und bieten Ihnen unsere jahrzehntelange Erfahrung im Wäscheservice für alle Arten von Kleidung, wir garantieren, dass Sie mit unserem Service zufrieden sein werden.
         </Typography>
       </Box>
 
-      <div  id='hochzeit'></div>
+      <div id='hochzeit'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={hochzeit}
@@ -75,13 +76,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Wir haben die besten Fachleute für die Pflege, Wäsche und Reparatur Ihres Brautkleides.
         </Typography>
       </Box>
 
-      <div  id='hemde'></div>
+      <div id='hemde'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={hemden}
@@ -91,13 +92,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Unsere professionellen Hemdenbügel-Experten, mit jahrzehntelanger Erfahrung im Dienste unserer Kunden. Wir sind stolz darauf, einen qualitativ hochwertigen Service zu bieten.
         </Typography>
       </Box>
 
-      <div  id='abholung'></div>
+      <div id='abholung'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={abholung}
@@ -107,13 +108,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Wir wissen, dass die Zeit für viele unserer Kunden sehr wichtig ist. Deshalb bieten wir einen Abhol- und Lieferservice an, damit Sie Ihre Kleidung pünktlich und bequem von zu Hause aus in Empfang nehmen können.
         </Typography>
       </Box>
 
-      <div  id='teppich'></div>
+      <div id='teppich'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={teppich}
@@ -123,13 +124,13 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Unsere Fachleute arbeiten mit großer Sorgfalt und Präzision bei der Pflege Ihrer Teppiche.
         </Typography>
       </Box>
 
-      <div  id='leder' ></div>
+      <div id='leder' ></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={leder}
@@ -139,14 +140,14 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Unsere jahrzehntelange Erfahrung garantiert Ihnen die beste Arbeit in der Pflege aller Arten von Materialien, Leder ist sehr empfindlich und wir wissen das, deshalb verwenden wir die besten Techniken. Wir garantieren Ihnen eine ausgezeichnete Arbeit.
         </Typography>
       </Box>
 
 
-      <div  id='pelze'></div>
+      <div id='pelze'></div>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage={pelze}
@@ -156,9 +157,9 @@ const ParallaxService: FC<{}> = () => {
 
         <Box style={{ height: '650px' }} />
       </Parallax>
-      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{margin:'8em'}}>
+      <Box display='flex' justifyContent='center' alignItems='center' height='10vh' sx={{ margin: '8em' }}>
         <Typography align='justify' >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque, soluta accusantium distinctio reprehenderit iusto fugit ad nihil in explicabo, animi magnam, architecto optio dolorem nesciunt repellat possimus quia ea.
+          Unsere jahrzehntelange Erfahrung garantiert Ihnen beste Arbeit bei der Pflege von Materialien aller Art. Wir sind uns bewusst, wie empfindlich manche Materialien sein können, und deshalb bieten wir einen sehr hochwertigen Service an. Unsere Fachleute arbeiten mit großer Sorgfalt und Effizienz für Sie.
         </Typography>
       </Box>
 
