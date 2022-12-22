@@ -8,6 +8,10 @@ import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 import Logo from './Logo';
 import logoSimple from '../../public/LogoSimple.jpeg'
 
+import logoMobile from  '../../public/imgs/navbar-mobile.png'
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+
+
 const NewNavBarApp: FC<{}> = () => {
 
     const [open, setOpen] = useState(false)
@@ -22,7 +26,7 @@ const NewNavBarApp: FC<{}> = () => {
 
     return (
         <Box>
-            <AppBar>
+            <AppBar >
                 <Toolbar>
                     <Hidden only={['md', 'lg', 'xl']}>
                         <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -30,10 +34,11 @@ const NewNavBarApp: FC<{}> = () => {
                             <Grid item sx={{}}>
                                 <Stack direction='column' spacing={2} alignItems='start'>
                                     <Box>
-                                        <Typography variant="h6">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen</Typography>
+                                      <ImageListItemBar position='top' title={<Typography variant="h6">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen </Typography>}>
+                                      </ImageListItemBar>
                                     </Box>
                                     <Box>
-                                        <Typography variant="body1">Urlaub: 24.12.2022 – 8.1.2023</Typography>
+                                        <Typography marginTop={5} variant="h6">Urlaub: 24.12.2022 – 8.1.2023</Typography>
                                     </Box>
                                     <IconButton href="tel: +43 1 4704203" size='small' edge='end'>
                                         <LocalPhoneIcon />
