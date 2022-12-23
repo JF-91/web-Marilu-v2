@@ -1,18 +1,22 @@
-import { AppBar, Box, Button, Drawer, Grid, Hidden, IconButton, Link, Stack, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Button, CardMedia, Drawer, Grid, Hidden, IconButton, ImageListItem, Link, Stack, Toolbar, Typography } from '@mui/material'
 import React, { FC, useState } from 'react'
 
 //menu icon
 import MenuIcon from '@mui/icons-material/Menu';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
-import Logo from './Logo';
-import logoSimple from '../../public/LogoSimple.jpeg'
-
-import logoMobile from  '../../public/imgs/navbar-mobile.png'
+import logo from './LogoKomplett.gif'
 import ImageListItemBar from '@mui/material/ImageListItemBar';
+import { NavLink } from 'react-router-dom';
+
+//css
+import './navegation.css'
+import { positions } from '@mui/system';
 
 
 const NewNavBarApp: FC<{}> = () => {
+
+  
 
     const [open, setOpen] = useState(false)
 
@@ -25,44 +29,51 @@ const NewNavBarApp: FC<{}> = () => {
 
 
     return (
-        <Box>
-            <AppBar >
-                <Toolbar>
+        <Box component='div' marginTop={{xs:'25em', sm:'25em'}}>
+            <AppBar variant='elevation' color='primary'>
+                <Toolbar variant='regular'>
                     <Hidden only={['md', 'lg', 'xl']}>
-                        <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-
-                            <Grid item sx={{}}>
-                                <Stack direction='column' spacing={2} alignItems='start'>
-                                    <Box>
+                        <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}  >
+                            
+                            <Grid item  >
+                                <Stack direction='column' spacing={2} alignItems='end' marginTop={2}>
+                                    <CardMedia component='img'image={logo} height='190'/>
+                                    {/* <Box>
                                       <ImageListItemBar position='top' title={<Typography variant="h6">Öffnungszeiten: Mo-Fr 8:00 – 16:30, Sa geschlossen </Typography>}>
                                       </ImageListItemBar>
                                     </Box>
                                     <Box>
                                         <Typography marginTop={5} variant="h6">Urlaub: 24.12.2022 – 8.1.2023</Typography>
-                                    </Box>
-                                    <IconButton href="tel: +43 1 4704203" size='small' edge='end'>
-                                        <LocalPhoneIcon />
-                                        01 / 4704203
+                                    </Box> */}
+                                    
+                                     <IconButton
+                                        edge='start'
+                                        size='large'
+                                        aria-label='open drawer'
+                                        color='inherit'
+                                        onClick={toggleDrawer(true)}>
+                                        <MenuIcon />
                                     </IconButton>
-
-                                    <IconButton href='mailto:textilreinigung.1180@inode.at' size='small' edge='end' >
-                                        <ForwardToInboxIcon />
-                                        email
-                                    </IconButton>
-
+                                    
                                 </Stack>
                             </Grid>
-
                             <Grid item>
-                                <IconButton
-                                    edge='start'
-                                    size='large'
-                                    aria-label='open drawer'
-                                    color='inherit'
-                                    onClick={toggleDrawer(true)}>
-                                    <MenuIcon />
-                                </IconButton>
+                                    <Stack spacing={2} direction='row'>
+
+                                        <IconButton href="tel: +43 1 4704203" size='small' edge='start'>
+                                                    <LocalPhoneIcon />
+                                                    01 / 4704203
+                                        </IconButton>
+
+                                        <IconButton href='mailto:textilreinigung.1180@inode.at' size='small' edge='end' >
+                                                    <ForwardToInboxIcon />
+                                                    email
+                                        </IconButton>
+                                    </Stack>
                             </Grid>
+
+                           
+
                         </Grid>
 
 
@@ -74,26 +85,26 @@ const NewNavBarApp: FC<{}> = () => {
                             onPointerEnter={toggleDrawer(true)}>
                             <Box sx={{ p: 2, height: 1, backgroundColor: "#434242", }}>
                                 <Stack direction='column' spacing={3}>
-                                    <Button variant='text' >
-                                        <Link href='/about' underline='none'>
-                                            <Typography variant='body2' >
-                                                About
+                                    <Button variant='contained' >
+                                        <NavLink to='/about' style={{textDecoration: "none"}}>
+                                            <Typography variant='body2' color='black'>
+                                                Unser Service
                                             </Typography>
-                                        </Link>
+                                        </NavLink>
                                     </Button>
-                                    <Button variant='text' >
-                                        <Link href='/contact' underline='none'>
-                                            <Typography variant='body2'>
-                                                Contact
+                                    <Button variant='contained' >
+                                        <NavLink to='/contact' style={{textDecoration: "none"}}>
+                                            <Typography variant='body2' color='black'>
+                                                Kontakt
                                             </Typography>
-                                        </Link>
+                                        </NavLink>
                                     </Button>
-                                    <Button variant='text' >
-                                        <Link href='/' underline='none'>
-                                            <Typography variant='body2'>
+                                    <Button variant='contained' color='primary'>
+                                        <NavLink to='/' style={{textDecoration: "none"}}>
+                                            <Typography variant='body2' color='black'>
                                                 Home
                                             </Typography>
-                                        </Link>
+                                        </NavLink>
                                     </Button>
 
                                 </Stack>
@@ -103,17 +114,15 @@ const NewNavBarApp: FC<{}> = () => {
                     </Hidden>
                     <Hidden only={['sm', 'xs']}>
                         <Grid container justifyContent='space-between'>
-                            <Grid item>
+                            <Grid item >
                                 <IconButton LinkComponent={Link} href='/'>
-                                    <Box
-                                        component='img'
-                                        sx={{ height: 64, }}
-                                        alt='logo'
-                                        src='/logoSimple.jpeg'>
+                                    <Box>
+                                        <CardMedia component='img'image={logo} sx={{height:180}}/>
 
                                     </Box>
 
                                 </IconButton>
+                                
                             </Grid>
                             <Grid item sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                 <Stack direction='column' spacing={2}>
@@ -123,22 +132,26 @@ const NewNavBarApp: FC<{}> = () => {
                                     <Box>
                                         <Typography variant="body1">Urlaub: 24.12.2022 – 8.1.2023</Typography>
                                     </Box>
+
+                                    
+                                    
                                 </Stack>
                             </Grid>
+                            
 
                             <Grid item
                                 display='flex' justifyContent='space-between' alignItems='center'>
 
                                 <Stack direction="row" spacing={2}>
                                     <Button variant="contained" color="secondary">
-                                        <Link href='/about' underline='none'>
+                                        <NavLink to='/about' style={{textDecoration: "none"}}>
                                             <Typography color="white">Unser Service</Typography>
-                                        </Link>
+                                        </NavLink>
                                     </Button>
                                     <Button variant="contained" color="secondary">
-                                        <Link href='/contact' underline='none'>
+                                        <NavLink to='/contact' style={{textDecoration: "none"}}>
                                             <Typography color="white">Kontakt</Typography>
-                                        </Link>
+                                        </NavLink>
                                     </Button>
                                     <IconButton href="tel: +43 1 4704203">
                                         <LocalPhoneIcon />

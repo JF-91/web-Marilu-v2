@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Paper, TextareaAutosize, TextField, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Paper, TextareaAutosize, TextField, Typography } from '@mui/material'
 import { useFormik } from 'formik'
 import React, { FC } from 'react'
 //yup
@@ -56,6 +56,7 @@ const FormApp: FC<{}> = () => {
                                 style={{ width: '100%' }}
 
                             />
+                            <Button variant='contained' sx={{mt:4}}>Submit</Button>
                         </Box>
                     </Paper>
                 </Grid>

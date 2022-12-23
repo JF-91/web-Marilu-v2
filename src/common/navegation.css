@@ -1,0 +1,9 @@
+.navegation{
+    background-image: url("../../public/testlogo.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20px 10px;
+    background-size:100px 100px ;
+    
+
+}

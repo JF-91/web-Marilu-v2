@@ -29,11 +29,11 @@ const ContactPage: FC<{}> = () => {
           <SectionContact />
         </Grid>
 
-        <Grid item xs={12} md={4} xl={6} >
+        {/* <Grid item xs={12} md={4} xl={6} >
           <Box sx={{ alignContent:'center' ,alignItems:'center', justifyContent: 'center' }}>
             <FormApp />
           </Box>
-        </Grid>
+        </Grid> */}
 
       </Grid>
     </Container>

@@ -1,7 +1,7 @@
 
 
-import { Button, Container, Grid, IconButton, Typography } from '@mui/material'
-import { Stack } from '@mui/system'
+import { Box, Button, Container, Grid, IconButton, ImageListItemBar, Typography, Stack } from '@mui/material'
+
 import React, { FC } from 'react'
 import PriceFoto from './section/Price'
 
@@ -15,39 +15,47 @@ const PriceAndInfo: FC<{}> = () => {
                 direction='row'
                 alignItems='center'
                 justifyContent='center'
-                sx={{ minHeight: '100vh' }}>
-                <Stack direction='column' spacing={4} justifyContent='center' alignContent='center' alignItems='center'>
+                sx={{ minHeight: '20vh' }}>
+                <Stack direction='column' spacing={2} justifyContent='center' alignContent='center' alignItems='center'>
 
-                    <Grid item>
+                    {/* <Grid item>
                         <PriceFoto />
-                    </Grid>
-                    <Grid item>
+                    </Grid> */}
+                    <Grid item sx={{display:'flex'}} alignItems='center'  justifyContent='center'>
                         <Button variant='outlined' href='/Preisliste.pdf' target='_blank'>
                             <Typography variant='body1'>
                                 Preisliste herunterladen
                             </Typography>
                         </Button>
-                        <IconButton href='https://goo.gl/maps/2yYVywMj6VczBMph6'>
+                        <IconButton href='https://goo.gl/maps/2yYVywMj6VczBMph6' target='_blank'>
                             <AddLocationIcon />
                             <Typography variant='body2'>Hier finden Sie uns</Typography>
                         </IconButton>
                     </Grid>
-                    <Grid item>
-                        <Typography variant='h3' fontSize='medium'>
-                            Kleiderreinigung & Wäscherei
+                    <Grid item sx={{placeContent:'center'}}>
+
+                        <Typography variant='h6' textAlign='center'>
+                        Öffnungszeiten: Mo-Fr 8:00 – 16:30
                         </Typography>
-                        <Typography>
-                            Marilu Rios de Schön
+                        <Typography variant='h6' textAlign='center'>
+                        Samstag geschlossen
                         </Typography>
-                        <Typography>
+                        <Typography variant='h6' textAlign='center'>
+                            Urlaub: 24.12.2022 – 8.1.2023
+                        </Typography>
+                        
+                        <Typography variant='h6' textAlign='center'>
                             Herbeckstraße 38, 1180 Wien
                         </Typography>
-                        <Typography>
+                        <Typography variant='h6' textAlign='center'>
                             Tel.: 01 / 4704203
                         </Typography>
-                        <Typography>
-                            e-mail: textilreinigung.1180@inode.at
-                        </Typography>
+                        <Button href='mailto:textilreinigung.1180@inode.at'>
+
+                            <Typography variant='h6'>
+                                e-mail: textilreinigung.1180@inode.at
+                            </Typography>
+                        </Button>
                     </Grid>
                 </Stack>
             </Grid>

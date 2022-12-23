@@ -1,5 +1,5 @@
 import { ContactPage } from '@mui/icons-material';
-import { Box, Container, Grid, IconButton, Link } from '@mui/material';
+import { Box, Container, Grid, IconButton, Link, Typography } from '@mui/material';
 import React, { FC } from 'react'
 
 //icons
@@ -10,6 +10,7 @@ import ForwardToInboxIcon from '@mui/icons-material/ForwardToInbox';
 //logo
 import Logo from './Logo'
 import Impresum from './Impresum';
+import { NavLink } from 'react-router-dom';
 const Footer: FC<{}> = () => {
 
     
@@ -26,14 +27,19 @@ const Footer: FC<{}> = () => {
                         <Grid item xs={12} sm={4}>
                             <Box borderBottom={1} sx={{color:'#424242'}}>Unternehmen</Box>
                             <Box>
-                                <Link href='/contact' color="inherit" sx={{color:'#424242'}}>
-                                    Kontact
-                                </Link>
+                                <NavLink to='/contact' style={{textDecoration: "none"}}>
+                                   <Typography variant='body1' color='#424242' >
+                                        Kontakt
+                                   </Typography>
+                                </NavLink>
                             </Box>
                             <Box>
-                                <Link href='/about' color="inherit" sx={{color:'#424242'}}>
-                                    Über uns
-                                </Link>
+                                <NavLink to='/about' style={{textDecoration: "none"}}>
+                                    <Typography variant='body1' color='#424242'>
+
+                                        Über uns
+                                    </Typography>
+                                </NavLink>
                             </Box>
                            
 
@@ -41,9 +47,12 @@ const Footer: FC<{}> = () => {
                         <Grid item xs={12} sm={4}>
                             <Box borderBottom={1} sx={{color:'#424242'}}>Hilfe</Box>
                             <Box>
-                                <Link href='/contact' color="inherit" sx={{color:'#424242'}}>
-                                    Kontact
-                                </Link>
+                                <NavLink to='contact' style={{textDecoration:'none'}}>
+                                    <Typography variant='body1' color='#424242'>
+
+                                        Kontakt
+                                    </Typography>
+                                </NavLink>
                             </Box>
                             <Box>
                                 <IconButton href="tel: +43 1 4704203">

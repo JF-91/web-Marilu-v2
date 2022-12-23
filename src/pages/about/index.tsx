@@ -9,10 +9,10 @@ const AboutPage:FC<{}> = () => {
   return (
     <Box>
       
-    <Container>
-      <MainAboutPage />
-    </Container>
-    <ParallaxService />
+      <Container>
+        <MainAboutPage />
+      </Container>
+      <ParallaxService />
     </Box>
   )
 }

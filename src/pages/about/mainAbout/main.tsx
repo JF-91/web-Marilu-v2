@@ -43,7 +43,7 @@ const MainAboutPage: FC<{}> = () => {
             <Grid container sx={{ mt: '5em', placeContent:'center' }} >
 
                 <Grid item >
-                    <Typography borderBottom={2} variant='h2' color='primary'>
+                    <Typography borderBottom={2} variant='h3' color='primary'>
                         Kleiderreinigung & Wäscherei
                     </Typography>
 

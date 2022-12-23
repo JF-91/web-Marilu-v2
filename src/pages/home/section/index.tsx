@@ -24,7 +24,7 @@ const SectionHomePAge: FC<{}> = () => {
                     </Paper>
                 </Grid>
 
-                <Grid item sx={{ sm: 12, md: 6, xl: 6 }}>
+                <Grid item sx={{ sfröhlichem: 12, md: 6, xl: 6 }}>
                     <Box alignItems='center' justifyContent='center' marginTop='1.5em'>
                         <Typography color='peru' variant='h1'>
                             fröhliche Weihnachten!

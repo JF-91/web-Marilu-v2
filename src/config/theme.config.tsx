@@ -1,7 +1,8 @@
 
+import { Height } from "@mui/icons-material"
 import { createTheme, ThemeProvider, CssBaseline, Typography } from "@mui/material"
 import React, {FC} from "react"
-import logo from '../../public/imgs/navbar-mobile.jpg'
+import logo from '../../public/imgs/LogoKomplett.gif'
 
 type PropType ={
     children: JSX.Element
@@ -57,6 +58,14 @@ const ThemeConfig:FC<PropType> = ({children})=>{
                 }
               }
             },
+            MuiAppBar:{
+               styleOverrides:{
+                colorSecondary:{
+                   
+                    
+                }
+               }
+            }
            
             
 
