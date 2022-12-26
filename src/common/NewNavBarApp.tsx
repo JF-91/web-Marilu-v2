@@ -115,11 +115,14 @@ const NewNavBarApp: FC<{}> = () => {
                     <Hidden only={['sm', 'xs']}>
                         <Grid container justifyContent='space-between'>
                             <Grid item >
-                                <IconButton LinkComponent={Link} href='/'>
-                                    <Box>
-                                        <CardMedia component='img'image={logo} sx={{height:180}}/>
+                                <IconButton >
+                                    <NavLink to='/'>
 
-                                    </Box>
+                                        <Box>
+                                            <CardMedia component='img'image={logo} sx={{height:180}}/>
+
+                                        </Box>
+                                    </NavLink>
 
                                 </IconButton>
                                 

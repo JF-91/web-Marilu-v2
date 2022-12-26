@@ -20,8 +20,8 @@ import React, { FC } from "react";
 import { Stack } from "@mui/system";
 import { NavLink } from "react-router-dom";
 //logo
-import Logo from './Logo'
-import HomePage from "../pages/home";
+import Logo from '../Logo'
+import HomePage from "../../pages/home";
 const NavBarApp: FC<{}> = () => {
   return (
     <Box sx={{ flexGrow: 1, mb: 9 }}>
